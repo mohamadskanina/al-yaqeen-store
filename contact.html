@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-i18n="contact_title">Contact Us | Al Yaqeen App</title>
+    <meta
+      name="description"
+      content="Contact the Al Yaqeen team for support, partnership inquiries, or general questions."
+      data-i18n-content="contact_description"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div data-include="components/header.html"></div>
+
+    <main class="contact-page">
+      <div class="container">
+        <header class="contact-heading">
+          <span class="kicker" data-i18n="contact_kicker">Say hello</span>
+          <h1 data-i18n="contact_heading">We’d love to hear from you.</h1>
+          <p data-i18n="contact_intro">Send us a message and the Al Yaqeen team will respond within 24 hours.</p>
+        </header>
+
+        <section class="contact-content">
+          <div class="contact-card reveal-on-scroll">
+            <h2 data-i18n="contact_form_title">Drop us a line</h2>
+            <form id="contactForm" novalidate>
+              <div class="form-field">
+                <label for="name" data-i18n="contact_form_name_label">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="John Doe"
+                  required
+                  minlength="2"
+                  data-i18n-placeholder="contact_form_name_placeholder"
+                />
+                <p class="field-error" data-error-for="name"></p>
+              </div>
+              <div class="form-field">
+                <label for="email" data-i18n="contact_form_email_label">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                  data-i18n-placeholder="contact_form_email_placeholder"
+                />
+                <p class="field-error" data-error-for="email"></p>
+              </div>
+              <div class="form-field">
+                <label for="message" data-i18n="contact_form_message_label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  placeholder="How can we help?"
+                  required
+                  minlength="10"
+                  data-i18n-placeholder="contact_form_message_placeholder"
+                ></textarea>
+                <p class="field-error" data-error-for="message"></p>
+              </div>
+              <button type="submit" class="btn btn-primary btn-animated">
+                <span data-i18n="contact_form_button">Send Message</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M3 4h18l-8 8 8 8H3l8-8z" />
+                </svg>
+              </button>
+              <p class="form-feedback" role="status" aria-live="polite" hidden></p>
+            </form>
+          </div>
+          <div class="contact-sidebar reveal-on-scroll">
+            <div class="contact-info">
+              <h2 data-i18n="contact_support_hours_title">Support Hours</h2>
+              <p data-i18n="contact_support_hours_text">24/7 live chat · Email replies within 24 hours</p>
+            </div>
+            <div class="contact-info">
+              <h2 data-i18n="contact_quick_links_title">Quick Links</h2>
+              <ul>
+                <li><a href="privacy-policy.html" data-i18n="contact_quick_links_privacy">Privacy Policy</a></li>
+                <li><a href="terms-and-conditions.html" data-i18n="contact_quick_links_terms">Terms &amp; Conditions</a></li>
+                <li><a href="index.html#features" data-i18n="contact_quick_links_features">App Features</a></li>
+              </ul>
+            </div>
+            <div class="contact-info">
+              <h2 data-i18n="contact_direct_email_title">Direct Email</h2>
+              <a class="contact-email" href="mailto:support@alyaqeen.app">support@alyaqeen.app</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <div data-include="components/footer.html"></div>
+
+    <script src="assets/js/languages.js" defer></script>
+    <script src="assets/js/main.js" defer></script>
+  </body>
+</html>
+
